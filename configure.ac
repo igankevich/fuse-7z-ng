@@ -1,4 +1,4 @@
-AC_INIT([fuse-7z-ng], [0.1], [david.kedves@borgcollective.eu])
+AC_INIT([fuse-7z-ng], [0.1], [david.kedves@borgcollective.eu], [], [https://github.com/igankevich/fuse-7z-ng])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AM_INIT_AUTOMAKE([subdir-objects])
 AM_MAINTAINER_MODE
@@ -32,6 +32,6 @@ PKG_CHECK_MODULES([fuse], [fuse >= 2.8])
 AC_SUBST(fuse_CFLAGS)
 AC_SUBST(fuse_LIBS)
 
-AC_CONFIG_FILES(Makefile lib7zip-165/Makefile src/Makefile)
+AC_CONFIG_FILES(Makefile lib7zip-165/Makefile src/Makefile fuse-7z-ng.spec)
 AC_OUTPUT
 
